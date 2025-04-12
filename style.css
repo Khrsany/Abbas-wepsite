@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: "Sriracha", cursive;
+}
+
+.header {
+    background-color: #1212ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header-links a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.header-links a:hover {
+    background-color: #3939ff;
+}
+
+.header-links button {
+    background-color: #8912ff;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-links button:hover {
+    background-color: #9d39ff;
+}
