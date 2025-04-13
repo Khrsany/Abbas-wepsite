@@ -2,118 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ABSI Store - the ultimate gaming destination. Buy trending games, browse deals, and enjoy top-rated game store experience." />
   <title>ABSI Store</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- HEADER -->
-  <div class="header">
-    <img class="logo" src="images/Screenshot 2025-03-31 223657.png" />
-    <div class="header-links">
+  <header class="header">
+    <img class="logo" src="images/ChatGPT Image Apr 13, 2025, 02_39_32 PM.png" alt="ABSI Store logo" />
+    <nav class="header-links" aria-label="Main navigation">
       <a href="#home">Home</a>
-      <a href="#products">Our shop</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
-      <button class="btn">Sign in</button>
-    </div>
-  </div>
+      <a href="#products">Our Shop</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#signin" class="btn">Sign in</a>
+    </nav>
+  </header>
 
-  <!-- Landing Page -->
-  <div id="home" class="landing-page">
-    <div class="landing-page-left-section">
-      <span>Welcome To Absi!</span>
-      <h1>Best Gaming Site ever!</h1>
+  <!-- HOME SECTION -->
+  <main>
+    <section id="home" class="landing-page" aria-label="Landing page">
+      <div class="landing-page-left-section">
+        <span>Welcome To Absi!</span>
+        <h1>Best Gaming Site ever!</h1>
+        <p>
+          Discover the latest trending games, grab exclusive deals, and dive into the best gaming experience all in one place!
+        </p>
+        <form class="landing-page-search" role="search">
+          <label for="search-input" class="visually-hidden">Search games</label>
+          <input id="search-input" name="search" type="search" placeholder="Start typing..." required />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+      <div class="landing-page-image-container">
+        <img src="images/banner-image.jpg" alt="Gaming banner with ABSI branding" />
+      </div>
+    </section>
+
+    <!-- TRENDING SECTION -->
+    <section class="trending-container" aria-labelledby="trending-heading">
+      <span>Trending</span>
+      <div class="trending-header">
+        <h2 id="trending-heading">Trending Games</h2>
+        <a href="#" class="btn">View All</a>
+      </div>
+      <div class="trending-cards">
+        <article class="card">
+          <img class="thumb" src="images/marvel-rivals.jpg" alt="Marvel Rivals game" width="300" height="223" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Online</p>
+              <h3>Marvel Rivals</h3>
+            </div>
+            <a href="#" aria-label="Buy Marvel Rivals">
+              <img src="images/online-shopping.png" alt="Shopping cart icon" />
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="images/valorant.jpg" alt="Valorant game" width="300" height="223" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Competitive</p>
+              <h3>Valorant</h3>
+            </div>
+            <a href="#" aria-label="Buy Valorant">
+              <img src="images/online-shopping.png" alt="Shopping cart icon" />
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="images/trending-01.jpg" alt="Destiny game" width="300" height="223" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Action</p>
+              <h3>Destiny</h3>
+            </div>
+            <a href="#" aria-label="Buy Destiny">
+              <img src="images/online-shopping.png" alt="Shopping cart icon" />
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="products-section" aria-labelledby="products-heading">
+      <h2 id="products-heading">Our Products</h2>
+      <div class="product-cards">
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Headset with blue lights" width="250" height="160" />
+          <h3>Product 1</h3>
+          <p>Gaming headset with surround sound and RGB lights.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Wireless gaming mouse" width="250" height="160" />
+          <h3>Product 2</h3>
+          <p>Ergonomic wireless gaming mouse with fast response.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/product3.jpg" alt="RGB mechanical keyboard" width="250" height="160" />
+          <h3>Product 3</h3>
+          <p>Mechanical keyboard with clicky keys and RGB lighting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
       <p>
-        Absi is the ultimate destination for gamers.
-        Discover the latest trending games, grab exclusive deals,
-        and dive into the best gaming experience all in one place!
+        ABSI Store<br />
+        Vernerintie 10<br />
+        02430 Masala, Finland<br />
+        Email: <a href="mailto:alabass.alkhrsany@gmail.com">alabass.alkhrsany@gmail.com</a>
       </p>
-      <div class="landing-page-search">
-        <input placeholder="Start typing..." />
-        <button class="btn">SEARCH</button>
-      </div>
-    </div>
-    <div class="landing-page-image-container">
-      <img src="images/banner-image.jpg" />
-    </div>
-  </div>
+      <img class="map" src="images/masala_map.jpg" alt="Map showing ABSI Store location in Masala" width="468" height="263" />
+    </section>
 
-  <!-- Trending Games -->
-  <div class="trending-container">
-    <span>Trending</span>
-    <div class="trending-header">
-      <h1>Trending Games</h1>
-      <button class="btn">view all</button>
-    </div>
-    <div class="trending-cards">
-      <div class="card">
-        <img class="thumb" src="images/trending-01.jpg" />
-        <div class="card-info">
-          <div class="card-name">
-            <p>Action</p>
-            <h3>Assasins creed</h3>
-          </div>
-          <a><img src="images/online-shopping.png" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="thumb" src="images/top-game-02.jpg" height="223" width="300"/>
-        <div class="card-info">
-          <div class="card-name">
-            <p>Action</p>
-            <h3>Assasins creed</h3>
-          </div>
-          <a><img src="images/online-shopping.png" /></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="thumb" src="images/trending-01.jpg" />
-        <div class="card-info">
-          <div class="card-name">
-            <p>Action</p>
-            <h3>Assasins creed</h3>
-          </div>
-          <a><img src="images/online-shopping.png" /></a>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="contact-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About ABSI Store</h2>
+      <p>
+        ABSI Store is a modern online game shop created for passionate gamers.
+        Our goal is to offer the best selection of trending games and accessories with an easy and fun experience.
+      </p>
+      <p>
+        We focus on quality, speed, and service. Every gamer should find their favorite tools here—from esports gear to casual titles.
+      </p>
+    </section>
 
-  <!-- PRODUCTS Section -->
-  <div id="products" class="products-section">
-    <h2>Our Products</h2>
-    <div class="product-cards">
-      <div class="product-card">
-        <img src="images/product1.jpg" alt="Product 1 image" />
-        <h3>Product 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/product2.jpg" alt="Product 2 image" />
-        <h3>Product 2</h3>
-        <p>Nulla facilisi. Integer at libero nec felis consequat pretium.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/product3.jpg" alt="Product 3 image" />
-        <h3>Product 3</h3>
-        <p>Sed non lorem vel velit egestas cursus nec ut sapien.</p>
-      </div>
-    </div>
-  </div>
-<!-- CONTACT Section -->
-<div id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <p>
-    ABSI Store<br />
-    vernerintie 10<br />
-    02430 Masala, Finland<br />
-    Email: alabass.alkhrsany@gmail.com
-  </p>
-  <img src="images/map.png" alt="map image" />
-</div>
+    <!-- SIGN IN SECTION -->
+    <section id="signin" class="contact-section" aria-labelledby="signin-heading">
+      <h2 id="signin-heading">Sign In</h2>
+      <form>
+        <label for="email">Email:</label><br />
+        <input id="email" type="email" name="email" required /><br /><br />
+
+        <label for="password">Password:</label><br />
+        <input id="password" type="password" name="password" required /><br /><br />
+
+        <button type="submit" class="btn">Sign in</button>
+      </form>
+    </section>
+  </main>
 
 </body>
 </html>
